@@ -1,0 +1,16 @@
+{
+  "name": "Luka Doncic",
+  "stats": [
+    {
+      "pts": 32.4,
+      "fga": 22.0,
+      "ast": 8.0,
+      "drb": 7.8,
+      "orb": 0.8,
+      "stl": 1.4,
+      "blk": 0.5,
+      "to": 3.6
+    }
+  ],
+  "ref": "https://www.basketball-reference.com/players/d/doncilu01.html"
+}
