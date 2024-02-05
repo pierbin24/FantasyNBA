@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy NBA</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+        background-image: url("floor.jpg"); /* Assicurati che il percorso sia corretto */
+        background-size: cover; /* Adatta l'immagine per coprire l'intero sfondo */
+        background-position: center; /* Posiziona l'immagine al centro del corpo */
+        background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      table {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 100px;
+        margin: 20px auto;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+      input {
+        width: 50px;
+        padding: 8px;
+        text-align: center;
+        float: right;
+      }
+      label {
+        float: left;
+        clear: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #applicaBtn {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fantasy NBA</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Parametri</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label for="pts">PTS:</label>
+            <input type="number" id="pts" value="0" step="0.5" /><br />
+            <label for="fga">FGA:</label>
+            <input type="number" id="fga" value="0" step="0.5" /><br />
+            <label for="ast">AST:</label>
+            <input type="number" id="ast" value="0" step="0.5" /><br />
+            <label for="dr">DRB:</label>
+            <input type="number" id="dr" value="0" step="0.5" /><br />
+            <label for="or">ORB:</label>
+            <input type="number" id="or" value="0" step="0.5" /><br />
+            <label for="stl">STL:</label>
+            <input type="number" id="stl" value="0" step="0.5" />
+            <label for="blk">BLK:</label>
+            <input type="number" id="blk" value="0" step="0.5" />
+            <label for="to">TO:</label>
+            <input type="number" id="to" value="0" step="0.5" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="applicaBtn">Applica</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>FP</th>
+          <th>PTS</th>
+          <th>FGA</th>
+          <th>AST</th>
+          <th>DRB</th>
+          <th>ORB</th>
+          <th>STL</th>
+          <th>BLK</th>
+          <th>TOV</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Riga 1 -->
+
+        <!-- Ripeti per altri giocatori -->
+        <!-- Ripeti per altri giocatori -->
+        <tr>
+          <td style="white-space: nowrap">Luka Doncic</td>
+          <td>59.45</td>
+          <td>32.4</td>
+          <td>22.0</td>
+          <td>8.0</td>
+          <td>7.8</td>
+          <td>0.8</td>
+          <td>1.4</td>
+          <td>0.5</td>
+          <td>3.6</td>
+        </tr>
+
+        <tr>
+          <td style="white-space: nowrap">Nikola Jokic</td>
+          <td>58.35</td>
+          <td>24.5</td>
+          <td>14.8</td>
+          <td>9.8</td>
+          <td>9.4</td>
+          <td>2.4</td>
+          <td>1.3</td>
+          <td>0.7</td>
+          <td>3.6</td>
+        </tr>
+
+        <tr>
+          <td style="white-space: nowrap">Jayson Tatum</td>
+          <td>52.8</td>
+          <td>30.1</td>
+          <td>21.1</td>
+          <td>4.6</td>
+          <td>7.7</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>0.7</td>
+          <td>2.9</td>
+        </tr>
+
+        <tr>
+          <td style="white-space: nowrap">Joel Embiid</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      document
+        .getElementById("applicaBtn")
+        .addEventListener("click", function () {
+          // Aggiungi qui il codice per applicare i parametri
+          alert("Parametri applicati con successo!");
+        });
+    </script>
+  </body>
+</html>
